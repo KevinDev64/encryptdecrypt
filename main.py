@@ -40,11 +40,13 @@ if __name__ == "__main__":
         
         if f == "1" or f == "Encrypt" or f == "encrypt":
             os.system('cls')
+            key1, key2 = "", ""
+            
             res = input("Enter a string for encrypter >> ")
             
             if res == "":
                 os.system('cls')
-                print("Invalid string! Exiting!")
+                print("Invalid string!  --> (STR-A) \nExiting!")
                 exit()
                 
             elif res != "1":
@@ -59,7 +61,7 @@ if __name__ == "__main__":
                 
         if f == "Decrypt" or f == "decrypt" or f == "2":
             os.system('cls')
-            
+            key1, key2 = "", ""
             
             
             try:
@@ -67,11 +69,11 @@ if __name__ == "__main__":
                 key2 = int(input("Enter the encrypted string >> ")) # Try & except
                 if key1 == "":
                     os.system('cls')
-                    print("Invalid string! Exiting!")
+                    print("Invalid string!  --> (STR-A) \nExiting!")
                     exit()
                 if key2 == "":
                     os.ystem('cls')
-                    print("Invalid string! Extinig!")
+                    print("Invalid string!  --> (STR-A) \nExiting!")
                     exit()
                 os.system('cls')
                 print("Decrypting...")
